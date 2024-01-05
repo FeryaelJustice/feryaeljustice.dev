@@ -1,10 +1,27 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+
+/*
+import { Resend } from "resend";
+const resendAPIKEY = import.meta.env.RESEND_API_KEY;
+
+const resend = new Resend(resendAPIKEY);
+
+resend.emails.send({
+  from: "onboarding@resend.dev",
+  to: "nano9gs@hotmail.es",
+  subject: "Hello World",
+  html: "<p>Congrats on sending your <strong>first email</strong>!</p>",
+});
+*/
 ---
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Porfolio</h1>
-	</main>
+<Layout title="Feryael Justice Portfolio">
+  <main>
+	<section class="w-full mx-auto py-10 lg:w-[740px]">
+		<h1 class="text-white text-5xl font-bold flex justify-center flex-row">I am FeryaelJustice <br/> (FeryaelDev in developing world)</h1>
+		<h2>+2 years of experience. Mobile / Android Developer. From Palma, Spain 🇪🇸. I specialize in creating unique and innovative apps.</h2>
+	</section>
+  </main>
 </Layout>
