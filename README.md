@@ -14,9 +14,3 @@ To learn more about Feryael's work or to get in touch, please visit his website 
 ## License
 
 This portfolio is licensed under the MIT License.
-
-## Contributing
-
-If you would like to contribute to this portfolio, please feel free to submit a pull request.
-
-**Thank you for visiting Feryael's portfolio!**
