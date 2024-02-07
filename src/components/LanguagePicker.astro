@@ -1,0 +1,23 @@
+---
+import { LANGUAGES } from "./../i18n/ui";
+import { capitalizeFirstLetter } from "./../utils/index";
+---
+
+<ul>
+  {
+    Object.entries(LANGUAGES).map(([lang, label]) => (
+      <li>
+        <a href={lang === "en" ? "/" : `/${lang}/`}>
+          {capitalizeFirstLetter(label)}
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  li:hover {
+    font-weight: bolder;
+    color: #9494ff;
+  }
+</style>

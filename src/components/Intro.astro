@@ -1,5 +1,11 @@
 ---
 import Card from "../components/Card.astro";
+
+interface Props {
+  lang: string;
+}
+
+const { lang } = Astro.props;
 ---
 
 <article class="w-full mx-auto text-center py-10 lg:w-[740px]">
@@ -9,12 +15,36 @@ import Card from "../components/Card.astro";
     alt=""
   />
   <h1 class="text-white text-5xl font-bold flex justify-center flex-row">
-    I am FeryaelDev <br />(Fernando Gonzalez Serrano)
+    {
+      lang && lang == "en" ? (
+        <div>
+          I am FeryaelDev <br />
+          (Fernando Gonzalez Serrano)
+        </div>
+      ) : (
+        <div>
+          Soy FeryaelDev <br />
+          (Fernando Gonzalez Serrano)
+        </div>
+      )
+    }
   </h1>
   <br />
   <h2>
-    +2 years of experience. Mobile / Web  Developer. From Palma, Spain 🇪🇸. I
-    specialize in creating unique and innovative apps.
+    {
+      lang && lang == "en" ? (
+        <div>
+          +2 years of experience. Mobile / Web Developer. From Palma, Spain 🇪🇸.
+          I specialize in creating unique and innovative apps.
+        </div>
+      ) : (
+        <div>
+          +2 años de experiencia. Desarrollador móvil/web. Desde Palma, España
+          🇪🇸. Me especializo en la creación de aplicaciones únicas e
+          innovadoras.
+        </div>
+      )
+    }
   </h2>
 </article>
 <article class="w-full mx-auto py-10 lg:w-[740px]">
