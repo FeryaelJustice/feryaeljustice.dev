@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Intro from "../components/Intro.astro";
 import Card from "../components/Card.astro";
 
 /*
@@ -19,28 +20,43 @@ resend.emails.send({
 
 <Layout title="Feryael Justice Portfolio">
   <main>
-    <section class="w-full mx-auto py-10 lg:w-[740px]">
-      <h1 class="text-white text-5xl font-bold flex justify-center flex-row">
-        I am FeryaelDev <br />(Fernando Gonzalez Serrano)
-      </h1>
-      <br />
-      <h2>
-        +2 years of experience. Mobile / Android Developer. From Palma, Spain
-        🇪🇸. I specialize in creating unique and innovative apps.
-      </h2>
+    <section class="intro">
+      <Intro />
     </section>
     <section>
-      <Card
-        href="https://developer.android.com"
-        title="Desarrollador Android"
-        body="Experto en Android"
-      />
-
-      <Card
-        href="https://web.dev"
-        title="Desarrollador Web"
-        body="Programador especializado en Frontend"
-      />
+      <h2 class="text-white text-3xl font-bold flex justify-center flex-row">
+        EXPERIENCE
+      </h2>
+      <article class="w-full mx-auto py-10 lg:w-[740px]">
+        <Card
+          href="https://www.homerti.com/es"
+          title="Homerti"
+          body="Programación Web con Laravel + Vue"
+        />
+        <Card
+          href="https://www.tec-soft.es/"
+          title="Tec-Soft"
+          body="Programación en Delphi Seattle y XMLBuilder"
+        />
+      </article>
+    </section>
+    <section>
+      <h2 class="text-white text-3xl font-bold flex justify-center flex-row">
+        PROJECTS
+      </h2>
+      <article class="w-full mx-auto py-10 lg:w-[740px]">
+        <Card
+          href="https://developer.android.com"
+          title="FeryaelDev"
+          body="Experto en Android"
+        />
+      </article>
     </section>
   </main>
 </Layout>
+
+<style>
+  .intro {
+    margin: 40px;
+  }
+</style>
